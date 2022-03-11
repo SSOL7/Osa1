@@ -19,6 +19,8 @@ function App() {
         <h1>Busan</h1>
         <Header course={course} />
         <Content part1={part1} exercises1={exercises1} />
+        <Content part1={part2} exercises2={exercises2} />
+        <Content part3={part3} exercises1={exercises3} />
         <Total part3={part3} exercises3={exercises3} />
       </header>
     </div>
