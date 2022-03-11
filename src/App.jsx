@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Seoul</h1>
+        <h1>Busan</h1>
         <Header course={course} />
         <Content part1={part1} exercises1={exercises1} />
         <Total part3={part3} exercises3={exercises3} />
@@ -25,3 +26,4 @@ function App() {
 }
 
 export default App
+
