@@ -4,26 +4,28 @@ import Content from './Content';
 import Total from './Total';
 
 function App() {
-  const part1 = {
-    name: 'Fundamentals of React',
-    exercises: 10
-  }
-  const part2 = {
-    name: 'Using props to pass data',
-    exercises: 7
-  }
-  const part3 = {
-    name: 'State of a component',
-    exercises: 14
-  }
+  const parts = [
+    {
+      name: 'Fundamentals of React',
+      exercises: 10
+    },
+    {
+      name: 'Using props to pass data',
+      exercises: 7
+    },
+    {
+      name: 'State of a component',
+      exercises: 14
+    }
+  ]
+  const numbers = [1, 2, 3, 4, 5];
+
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Seoul</h1>
-        <Header part1={part1} />
-        <Content part2={part2} />
-        <Total part3={part3} />
+        <Content parts={parts}/>
       </header>
     </div>
   )
