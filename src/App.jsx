@@ -1,10 +1,11 @@
+import {useState} from 'react';
 import './App.css';
 import Header from './Header';
 import Content from './Content';
 import Total from './Total';
 
 function App() {
-  const parts = [
+  const [parts, setParts] = useState([
     {
       name: 'Fundamentals of React',
       exercises: 10
@@ -17,15 +18,23 @@ function App() {
       name: 'State of a component',
       exercises: 14
     }
-  ]
-  const numbers = [1, 2, 3, 4, 5];
+  ]);
 
 
   return (
     <div className="App">
+
       <header className="App-header">
         <h1>Seoul</h1>
-        <Content parts={parts}/>
+        {parts.map(part => {
+          return (
+            <Content
+            key={part.name}
+            name={part.name}
+            exercises={part.exercises}
+            />
+          )
+        })}
       </header>
     </div>
   )

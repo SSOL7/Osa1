@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Content(props) {
-  const { parts } = props
+function Content({name, exercises}) {
   return (
     <>
-    <h1>Content</h1>
-    {parts.map(part => <p key={part.name}>{part.name} {part.exercises}</p>)}
+    <h2>Course name: {name} </h2>
+    <h2>Number of exercises:{exercises} </h2>
     </>
   )
 }
