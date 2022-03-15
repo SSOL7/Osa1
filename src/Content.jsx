@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Content({name, exercises}) {
+function Content(props) {
+  const { part2 } = props
   return (
     <>
-    <h2>Course name: {name} </h2>
-    <h2>Number of exercises:{exercises} </h2>
+      <h1>{ part2.name }</h1>
     </>
   )
 }
