@@ -1,44 +1,40 @@
+import { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import Content from './Content';
 import Total from './Total';
 
 function App() {
-
-  const course = {
-    name: 'Half Stack application development',
-    parts: [
-      {
-        name: 'Fundamentals of React',
-        exercises: 10
-      },
-      {
-        name: 'Using props to pass data',
-        exercises: 7
-      },
-      {
-        name: 'State of a component',
-        exercises: 14
-      }
-    ]
-  }
+  const [good, setGood] = useState(0)
+  const [neutral, setNeutral] = useState(0)
+  const [bad, setBad] = useState(0)
 
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Seoul</h1>
-        {course.parts.map(part => {
-          return (
-            <div>
-              <Header part1={part} />
-              <br />
-              <Content part2={part} />
-              <br />
-              <Total part3={part} />
-            </div>
-          )
-        })}
+        <div>
+        <button className='button' onClick={() => setGood(good + 1)}>
+          good
+        </button>
+        <br />
+        {good}
+        <br />
+        <br />
+        <button className='button' onClick={() => setNeutral(neutral + 1)}>
+          neutral
+        </button>
+        <br />
+        {neutral}
+        <br />
+        <br />
+        <button className='button' onClick={() => setBad(bad + 1)}>
+          bad
+        </button>
+        <br />
+        {bad}
+      </div>
       </header>
     </div>
   )

@@ -40,3 +40,13 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
