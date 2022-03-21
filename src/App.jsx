@@ -36,7 +36,7 @@ function App() {
         <br />
         <Total neutral_click={neutral_click} />
         <br />
-        <Statistics good={good} neutral={neutral} bad={bad} />
+        <Statistics allClicks={allClicks} good={good} neutral={neutral} bad={bad} />
       </header>
     </div>
   )
