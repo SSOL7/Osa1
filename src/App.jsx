@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Content from './Content';
 import Total from './Total';
+import Statistics from './Statistics';
 
 function App() {
   const [good, setGood] = useState(0);
@@ -25,34 +26,17 @@ function App() {
     setNeutral(neutral + 1);
   }
 
-
   return (
     <div className="App">
       <header className="App-header">
         <h1>Seoul</h1>
-        <div>
-        <button className='button' onClick={good_click}>
-          Good
-        </button>
+        <Header good_click={good_click} />
         <br />
-        {good}
+        <Content bad_click={bad_click} />
         <br />
+        <Total neutral_click={neutral_click} />
         <br />
-        <button className='button' onClick={bad_click}>
-          Bad
-        </button>
-        <br />
-        {bad}
-        <br />
-        <br />
-        <button className='button' onClick={neutral_click}>
-          Neutral
-        </button>
-        <br />
-        {neutral}
-        <br />
-        <p className='total'>{ allClicks.join(', ') }</p>
-      </div>
+        <Statistics good={good} neutral={neutral} bad={bad} />
       </header>
     </div>
   )

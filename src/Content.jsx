@@ -1,10 +1,9 @@
 import React from 'react'
 
-function Content(props) {
-  const { part2 } = props
+function Content({ bad_click }) {
   return (
     <>
-      <h1>Content</h1>
+      <button className='button' onClick={() => bad_click()} >Bad</button>
     </>
   )
 }

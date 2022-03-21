@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Header(props) {
-  const { part1 } = props
-  console.log(part1)
+function Header({ good_click }) {
   return (
     <>
-        <h1>Header</h1>
+        <button className='button' onClick={() => good_click()} >Good</button>
     </>
   )
 }

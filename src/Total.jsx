@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Total(props) {
-  const { part3 } = props
-  console.log(part3)
+function Total({ neutral_click }) {
   return (
     <>
-    <h1>Total</h1>
+    <button className='button' onClick={() => neutral_click()} >Neutral</button>
     </>
   )
 }
