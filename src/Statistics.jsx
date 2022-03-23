@@ -1,8 +1,9 @@
+
 import React from 'react'
 
 function Statistics({ allClicks, good, neutral, bad }) {
 
-    if (!allClicks) {
+    if (allClicks.length === 0) {
         return (
           <>
             <span>
