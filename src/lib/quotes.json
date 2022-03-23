@@ -1,0 +1,17 @@
+[
+    {
+        "_id": 1,
+        "name": "Premature optimization is the root of all evil.",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "If it hurts, do it more often.",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Adding manpower to a late software project makes it later!",
+        "votes":0
+    }
+]
