@@ -26,6 +26,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Seoul</h1>
+        <p>Busan</p>
         {quotes.map((quote, index) => {
           return (
             <Votingcard
